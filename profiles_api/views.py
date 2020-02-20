@@ -26,7 +26,7 @@ class UserLoginApiView(ObtainAuthToken):
 
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
 
-class UserProfileViewSet(viewsets.ModelViewSet):
+class UserProfileFeedViewSet(viewsets.ModelViewSet):
     """ Handles creating,Reading, Deleting and updating of profile feed items"""
 
     authentication_classes = (TokenAuthentication, )
